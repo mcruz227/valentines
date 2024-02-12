@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    justify-content: center; 
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    align-items:center;
+    background: black;
+    
+}
+/* makes box in a 45 degree */
+.heart{
+    height: 80px;
+    width: 80px;
+    background-color: pink;
+    position: relative;
+    transform: rotate(-45deg);
+}
+
+
+.heart:before{
+    content: "";
+    background-color: pink;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: -50%;
+    border-radius: 50px; 
+    
+}
+
+.heart:after{
+    content: "";
+    background-color: pink;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    right: -50%;
+    border-radius: 50px; 
+}
+
+
+
+
